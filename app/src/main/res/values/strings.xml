@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">EjemploPuntajeCheckbox</string>
+
+    <string name="Pregunta1">Para que sirve un boton</string>
+    <string name="CH1">Guardar un valor</string>
+    <string name="CH2">Es una cadena de caracteres </string>
+    <string name="Ch3">ES accionador de eventos</string>
+    <string name="CH4">Sirve para vincular una accion </string>
+    <string name="Button">Mostar </string>
+    <string name="Button1">Siguinte </string>
+</resources>
+
