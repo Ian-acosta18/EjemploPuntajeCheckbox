@@ -1,12 +1,31 @@
 <resources>
-    <string name="app_name">EjemploPuntajeCheckbox</string>
+    <string name="app_name">Trivia Movil UPP</string>
 
-    <string name="Pregunta1">Para que sirve un boton</string>
-    <string name="CH1">Guardar un valor</string>
-    <string name="CH2">Es una cadena de caracteres </string>
-    <string name="Ch3">ES accionador de eventos</string>
-    <string name="CH4">Sirve para vincular una accion </string>
-    <string name="Button">Mostar </string>
-    <string name="Button1">Siguinte </string>
+    <string name="P1">¿Para qué sirve un botón?</string>
+    <string name="P1_O1">Guardar un valor</string>
+    <string name="P1_O2">Es una cadena de caracteres</string>
+    <string name="P1_O3">Es accionador de eventos</string>
+    <string name="P1_O4">Sirve para vincular una acción</string>
+
+    <string name="P2">¿Cuáles son sistemas operativos para celulares?</string>
+    <string name="P2_O1">Android</string>
+    <string name="P2_O2">iOS (iPhone)</string>
+    <string name="P2_O3">Windows 11</string>
+    <string name="P2_O4">macOS</string>
+
+    <string name="P3">¿Dónde puedes descargar apps oficialmente?</string>
+    <string name="P3_O1">Google Play Store</string>
+    <string name="P3_O2">WhatsApp</string>
+    <string name="P3_O3">App Store</string>
+    <string name="P3_O4">Netflix</string>
+
+    <string name="P4">¿Qué funciones físicas usan comúnmente las apps?</string>
+    <string name="P4_O1">Cámara</string>
+    <string name="P4_O2">GPS (Ubicación)</string>
+    <string name="P4_O3">Impresora de papel</string>
+    <string name="P4_O4">Escáner de escritorio</string>
+
+    <string name="btn_validar">Validar Respuesta</string>
+    <string name="btn_siguiente">Siguiente Pregunta</string>
+    <string name="btn_finalizar">Ver Resultados</string>
 </resources>
-

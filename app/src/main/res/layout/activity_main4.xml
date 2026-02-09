@@ -1,41 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#BE4CAF50">
 
+    <TextView
+        android:id="@+id/Txtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Puntaje: 0"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
+            android:id="@+id/txtPre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
-            android:text="¿Qué funciones físicas usan comúnmente las apps?"
+            android:layout_marginBottom="20dp"
+            android:text="@string/P1"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:textStyle="bold" />
 
-        <CheckBox android:id="@+id/cb1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Cámara" />
-        <CheckBox android:id="@+id/cb2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="GPS (Ubicación)" />
-        <CheckBox android:id="@+id/cb3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Impresora de papel" />
-        <CheckBox android:id="@+id/cb4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Escáner de huellas de escritorio" />
+        <CheckBox android:id="@+id/cb1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/P1_O1" />
+        <CheckBox android:id="@+id/cb2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/P1_O2" />
+        <CheckBox android:id="@+id/cb3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/P1_O3" />
+        <CheckBox android:id="@+id/cb4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/P1_O4" />
 
         <Button
             android:id="@+id/b1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Finalizar" />
+            android:text="@string/btn_validar" />
 
+        <TextView
+            android:id="@+id/txtm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="-"
+            android:textColor="#FFFFFF"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/btn_siguiente" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
