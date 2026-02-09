@@ -18,13 +18,12 @@ public class MainActivity extends AppCompatActivity {
     Button b1,b2;
     TextView Puntaje,Mostrar;
     int punta = 0;
-    boolean verificar = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-
 
         ch1=findViewById(R.id.cb1);
         ch2=findViewById(R.id.cb2);
@@ -36,34 +35,29 @@ public class MainActivity extends AppCompatActivity {
         Mostrar=findViewById(R.id.txtm);
 
         b1.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View v) {
+                // Valida que ch3 y ch4 estén marcados, y ch1 y ch2 no
                 if(ch3.isChecked() && ch4.isChecked() && !ch1.isChecked() && !ch2.isChecked()){
                     punta += 1;
                     Mostrar.setText("Correcto");
-                    Puntaje.setText("Puntaje: "+punta);
-
-                }else{
-                    punta+=0;
+                } else {
                     Mostrar.setText("Incorrecto");
-                    Puntaje.setText("Puntaje: "+ punta);
                 }
+                Puntaje.setText("Puntaje: " + punta);
                 b1.setEnabled(false);
-
                 b1.setText("Ya respondiste");
             }
         });
+
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-              Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
                 intent.putExtra("Puntaje:", punta);
                 startActivity(intent);
-
             }
         });
-
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
