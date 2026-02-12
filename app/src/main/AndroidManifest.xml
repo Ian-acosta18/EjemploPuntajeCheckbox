@@ -12,9 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EjemploPuntajeCheckbox">
         <activity
-            android:name=".ResultActivity"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity4"
             android:exported="false" />
         <activity
