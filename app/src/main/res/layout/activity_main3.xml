@@ -33,16 +33,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:text="@string/P1"
+            android:text="@string/P3"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:textStyle="bold" />
 
-        <CheckBox android:id="@+id/cb1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/P1_O1" />
-        <CheckBox android:id="@+id/cb2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/P1_O2" />
-        <CheckBox android:id="@+id/cb3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/P1_O3" />
-        <CheckBox android:id="@+id/cb4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/P1_O4" />
+        <CheckBox android:id="@+id/cb1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/P3_O1" />
+        <CheckBox android:id="@+id/cb2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/P3_O2" />
+        <CheckBox android:id="@+id/cb3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/P3_O3" />
+        <CheckBox android:id="@+id/cb4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/P3_O4" />
 
         <Button
             android:id="@+id/b1"
